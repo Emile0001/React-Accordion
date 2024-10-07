@@ -1,12 +1,12 @@
 import { Questions } from "./components/Questions";
-import questions from "./data";
+import data from "./data";
+import { useState } from "react";
 
 const App = () => {
+    const [questions, setQuestions] = useState(data);
     return (
         <main>
-            <section>
-                <Questions questions={questions} />
-            </section>
+            <Questions questions={questions} />
         </main>
     );
 };

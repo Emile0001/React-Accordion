@@ -1,8 +1,13 @@
+import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+
 export const Question = ({ title, info }) => {
     return (
-        <section>
-            <h4>{title}</h4>
+        <article className="question">
+            <header>
+                <h4>{title}</h4>
+            </header>
+
             <p>{info}</p>
-        </section>
+        </article>
     );
 };
